@@ -101,7 +101,7 @@
     // let instructors
     // console.log(instructors) // output: undefined
   
-  // null: represents the intentional absence of a value, means nothing
+  // null: means nothing, represents the intentional absence of a value
     // let cohortName = null
     // console.log(cohortName) // Output: null
 
