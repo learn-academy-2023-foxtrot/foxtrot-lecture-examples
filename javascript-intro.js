@@ -14,7 +14,7 @@
 
   // to run the JavaScript code: $ node <nameOfFile.js>
 
-  // naming convention: camelCase
+  // naming convention: camelCase (written without spaces, begins with a lowercase letter and the first letter of each subsequent word is capitalized)
 
 // data types: predefined classification (categories) for the building blocks of a programming language
   // primitive data type: fundamental data type that represents a single value
@@ -65,18 +65,44 @@
       // "A l o h a" // spacing for visual purposes only
       // 1 2 3 4 5 ---> length
       // 0 1 2 3 4 ---> index
-      console.log("Aloha"[3]) // Question: What value is at the index of 3 in the string "Aloha"? // Output: "h"
+      // console.log("Aloha"[3]) // Question: What value is at the index of 3 in the string "Aloha"? // Output: "h"
   
   // Additional Notes: 
+  
+  // variable: container used to store values for a web application
+    // argument: variables or values passed into a function invocation or function call
+
+    // structure of the initial assignment of a variable:
+      // variable declaration: creating a variable by specifying its name using keywords like "var," "let," or "const"
+        // var - can be reassigned and redeclared
+        // let - can be reassigned but not redeclared
+        // const - can neither be reassigned nor redeclared
+      // variable name: always communicate intent, in camelCase
+      // assignment operator (=):  used to assign a value to a variable
+      // value: data recognized by JS by its datatype
+
+      // initial assignment as a string
+        // var ourCohort = "Foxtrot 2023 🦊"
+        // console.log(ourCohort) // Output: Foxtrot 2023 🦊
+      // redeclaring variable as a number
+        // var ourCohort = 2023
+        // console.log(ourCohort) // Output: 2023
+      // reassigning a value ---> NOTE: declaration keyword is not required when reassigning
+        // ourCohort = "🦊"
+        // console.log(ourCohort) // Output: 🦊
+
+  // type coercion: automatic conversion of data types by JavaScript during operations or comparisons when using incompatible datatypes
+    // console.log(2023 + "🦊") // Output: 2023🦊, concatenation occurs because JavaScript converts the number 2023 into a string
+
   // Boolean: true or false value, results of the evaluation within a condition
     // console.log(true) // output: true
 
   // undefined: indicate that a variable has been declared but has not been assigned a value
-  // null: represents the absence of an object
-  // symbol: unique identifiers (keys) for objects
-  // type coercion: automatic conversion of data types by JavaScript during operations or comparisons when using incompatible datatypes
+    // let instructors
+    // console.log(instructors) // output: undefined
+  
+  // null: represents the intentional absence of a value, means nothing
+    // let cohortName = null
+    // console.log(cohortName) // Output: null
 
-  // variable
-  // variable declaration
-  // assignment operator
-  // argument
+  // symbol: unique identifiers (keys) for objects
