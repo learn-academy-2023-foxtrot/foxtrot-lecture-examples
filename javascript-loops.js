@@ -18,53 +18,58 @@
 // output: Nicole (from outside of the code block)
 
 // if (true) {
-// let myName = "Nicole"
-// console.log(myName)
+//  let myName = "Nicole"
+//  console.log(myName)
 // output: Nicole
 // }
 // console.log(myName)
 // output: ReferenceError: myName is not define
 
 // Anatomy of a loop:
-// Information needed to create a for loop -
+// Information needed to create a for loop:
 //  - where to start
 //  - where to stop
-//  - how we want to get from start to finish 
+//  - how we want to get from start to stop 
 
-// long hand version:
-// for(let index = 0; index < 10; index = index + 1)
-// shorthand version:
-// for(let i = 0; i < 10; i++)
+// Longhand version:
+for (let index = 0; index < 10; index = index + 1)
+  //         start here  stop here    count by 1
+  // Shorthand version:
+  for (let i = 0; i < 10; i++)
 
-// for (let i = 0; i < 10; i++) {
-//   console.log(i)
-// }
+    for (let i = 0; i < 10; i++) {
+      console.log(i)
+    }
+// output: 0 1 2 3 4 5 6 7 8 9
 
-// infinite loop:
+// Infinite loop:
 // for (let i = 1; i > 0; i++) {
 //   console.log(i)
 // }
 // ctrl + c - to stop
-// inifinite loops occur when a task is not met and will go on until stopped or a stack overflow
+// inifinite loops occur when a condition is not met and will go on until stopped or a stack overflow occurs
 // stack overflow - when computer memory can no longer execute the code 
 
-// arrays and loops:
+// Arrays and Loops:
 // arrays start at index 0
 // arrays have a length property
-// once we identify an index - we can extract it's value
+// once we identify an index - we can then extract it's value
+
 // Examples:
 // const numsArray = [1, 2, 3, 4, 5]
-// console.log("nums array length", numsArray.length);
-// to show the length hard coded
-// for (let i = 0; i < 5; i++) {
-//   console.log("index", i)
-//   console.log("value", numsArray[i])
-// }
+// console.log("nums array length", numsArray.length)
+// output: 5 *we can then see that I want my loop to stop at 5, because that is the length of my given array*
+// hard coded
+for (let i = 0; i < 5; i++) {
+  console.log("index", i)
+  console.log("value", numsArray[i])
+}
+
 // dynamic
-// for (let i = 0; i < numsArray.length; i++) {
-//   console.log("index", i)
-//   console.log("value", numsArray[i])
-// }
+for (let i = 0; i < numsArray.length; i++) {
+  console.log("index", i)
+  console.log("value", numsArray[i])
+}
 
 // Logic with Loops:
 // Create a loop that will ONLY return odd numbers
