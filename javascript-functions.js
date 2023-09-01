@@ -85,7 +85,7 @@
 //   return `${wrestlerName} has defeated many opponents with the ${signMove}.`
 // }
 
-// // function call
+// function call
 // console.log(signatureMove("Steve Austin", "Stone Cold Stunner"))
 // output: Steve Austin has defeated many opponents with the Stone Cold Stunner.
 
@@ -103,22 +103,48 @@
   // string interpolation to abstract the value from the variable
   // use conditional statements to determine which emoji to include in the message
 
-// function expression
-  const iconStatement = (wrestlerName, signMove) => {
-    if(wrestlerName === "Steve Austin") {
-      return `🥫 ${wrestlerName} has defeated many opponents with the ${signMove}.`
-    } else if(wrestlerName === "Hulk Hogan") {
-      return `💪🏻 ${wrestlerName} has defeated many opponents with the ${signMove}.`
-    } else if(wrestlerName === "The Rock") {
-      return `🤨 ${wrestlerName} has defeated many opponents with the ${signMove}.`
+// // function expression
+//   const iconStatement = (wrestlerName, signMove) => {
+//     if(wrestlerName === "Steve Austin") {
+//       return `🥫 ${wrestlerName} has defeated many opponents with the ${signMove}. 🥫`
+//     } else if(wrestlerName === "Hulk Hogan") {
+//       return `💪🏻 ${wrestlerName} has defeated many opponents with the ${signMove}. 💪🏻`
+//     } else if(wrestlerName === "The Rock") {
+//       return `🤨 ${wrestlerName} has defeated many opponents with the ${signMove}. 🤨`
+//     } 
+//   }
+
+// // function call
+// console.log(iconStatement("Steve Austin", "Stone Cold Stunner"))
+// // output: 🥫 Steve Austin has defeated many opponents with the Stone Cold Stunner. 🥫
+
+// console.log(iconStatement("The Rock", "People's Elbow"))
+// // output: 🤨 The Rock has defeated many opponents with the People's Elbow. 🤨
+
+// console.log(iconStatement("Hulk Hogan", "Atomic Leg Drop"))
+// output: 💪🏻 Hulk Hogan has defeated many opponents with the Atomic Leg Drop. 💪🏻
+
+// cohort challenge: provide a refactor that incorporates the dry principle (Don't Repeat Yourself)
+
+// refactor - dry method; 
+  // since the statement will be used again, save in a variable
+  const iconStatement = (wrestler, move) => {
+    const statement = `${wrestler} has defeated many opponents with the ${move}.`
+    if(wrestler === "Steve Austin") {
+      return `🥫 ${statement} 🥫`
+    } else if(wrestler === "Hulk Hogan") {
+      return `💪🏻 ${statement} 💪🏻`
+    } else if(wrestler === "The Rock") {
+      return `🤨 ${statement} 🤨`
     } 
   }
 
-  // function call
-  console.log(signatureMove("Steve Austin", "Stone Cold Stunner"))
-  console.log(signatureMove("The Rock", "People's Elbow"))
-  console.log(signatureMove("Hulk Hogan", "Atomic Leg Drop"))
+// function call
+console.log(iconStatement("Steve Austin", "Stone Cold Stunner"))
+// output: 🥫 Steve Austin has defeated many opponents with the Stone Cold Stunner. 🥫
 
-  // cohort challenge: provide a refactor that incorporates the dry principle (Don't Repeat Yourself)
+console.log(iconStatement("The Rock", "People's Elbow"))
+// output: 🤨 The Rock has defeated many opponents with the People's Elbow. 🤨
 
-
+console.log(iconStatement("Hulk Hogan", "Atomic Leg Drop"))
+// output: 💪🏻 Hulk Hogan has defeated many opponents with the Atomic Leg Drop. 💪🏻
