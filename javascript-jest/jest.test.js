@@ -57,15 +57,13 @@
     // 3. Write the code: create code that will make the test pass
       // Create pseudocode and the function expression
 
-      // Prompt: Create a function named greeter that returns the string Aloha, Foxtrot23!!!
-
       // Pseudocode:
         // name of the function: greeter
         // input: none
         // output: string, Aloha, Foxtrot23!!!
         // process: make a self-invoking function
 
-      // // Function Expression:
+      // Function Expression:
       // const greeter = () => {
       //   return "Aloha, Foxtrot23"
       // }
@@ -168,6 +166,7 @@ describe("combinedSoup", () => {
   // function expression: 
   // const combinedSoup = (multipleSoups, oddSoups) => {
   //   let united = multipleSoups.concat(oddSoups)
+  // 
   //   // console.log to see the status of the data, make sure it is above the return. This printout will be at the top of the test suite.
   //     // console.log("united:", united)
   //     // output: 
@@ -178,6 +177,7 @@ describe("combinedSoup", () => {
   //       //   'beef stew',
   //       //   'bowl of cereal'
   //       // ]
+  // 
   //   return united.sort()
   // }
 
@@ -189,3 +189,23 @@ describe("combinedSoup", () => {
   const combinedSoup = (multipleSoups, oddSoups) => {
     return multipleSoups.concat(oddSoups).sort()
   }
+
+// Git flow to push changes from the project directory to GitHub 
+  // cd up to the level of the github directory: $ cd ..
+  // perform git flow to push local code to github
+    // $ git status
+      // NOTE: If you only see ./ on the untracked files then you are still at the project level
+    // $ git add <project-name>
+    // $ git commit -m "message describing the work that was accomplished"
+    // $ git push origin <branch-name>
+
+// Switching drivers
+  // make sure you have clone the github repo: $ git clone <url code from the github repo>
+  // $ git fetch origin <branch-name>
+  // $ git checkout <branch-name>
+  // cd into the project directory: $ cd <project-name>
+  // add the yarn dependencies: $ yarn
+
+// Additional swaps
+  // ensure you are on github repo and the correct branch 
+  // $ git pull origin <branch-name>
