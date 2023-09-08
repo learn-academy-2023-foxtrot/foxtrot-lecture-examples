@@ -35,3 +35,9 @@
 ### Error
 
 - Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>?
+
+### Create React App
+
+- yarn builds the app
+- yarn start runs the server
+- http://localhost:3000/
