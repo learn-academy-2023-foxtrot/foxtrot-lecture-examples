@@ -4,6 +4,7 @@
   // syntax for a class
     // keyword class, name of the class in PascalCase, {}
     // class NameOfClass {}
+    // PascalCase: first letter is capital as well as each capitalizing the first letter of each work
 
   // structure of class with constructor and custom methods
   // class PokemonTrainer {
