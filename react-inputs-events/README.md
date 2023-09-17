@@ -71,7 +71,7 @@ const App = () => {
 
 - **Function expression:**
 ```js
-// "e" stands for short hand for the DOM event
+// "e" short hand for the DOM event
 const handleChange = (e) => {
   // return something
   setUserInput(e.target.value)
@@ -86,7 +86,7 @@ const handleChange = (e) => {
     onChange={handleChange}
   />
 ```
-
+  
 5) Wrestler Name Generator
 - heading
 - Create a function that will take in the user input and add a suggested wrestler name
@@ -115,7 +115,7 @@ const wrestlerAlias = [
       - string interpolation to add the user input to that value
       - update the value of the state variable to be this wrestler name
 
-***Additional Notes***
+***Additional Notes***  
 6) Separate concerns
   - App.js: container component
     - react state
@@ -181,8 +181,8 @@ import Wrestler from "./components/Wrestler"
 
 #### Styling
 > - References: 
-> - [Multiple Backgrounds](https://www.w3schools.com/css/css3_backgrounds.asp)
-> - [Font Effects](https://www.w3schools.com/css/css3_backgrounds.asp)
+>   - [Multiple Backgrounds](https://www.w3schools.com/css/css3_backgrounds.asp)
+>   - [Font Effects](https://www.w3schools.com/css/css3_backgrounds.asp)
 > - import App.css on the App.js to allow styling to be shared throughout the application
 
 
