@@ -128,19 +128,23 @@ fruits = ['mangoes', 'grapes', 'watermelon', 'persimmons']
 # ICEBOX
 # how to print out just one value in an array
 # why do we need to store as a variable
-# clarify the example in syllabus - without p
-# To print without storing in a variable: p()
-my_array = [1, 2, 3, 4]
-p(my_array.map do |value|
-  value * value
-end)
-# output: [1, 4, 9, 16]
 
-my_array
-# output: [1, 2, 3, 4]
+# clarify the .map example in syllabus 
+  # To print without storing in a variable: p() - parenthesis
+  my_array = [1, 2, 3, 4]
+  p(my_array.map do |value|
+    value * value
+  end)
+  # output: [1, 4, 9, 16]
 
-# block with curly braces
-p my_array.map { |value| value * value }
-# output: [1, 4, 9, 16]
+  # It will not change the original array
+  p my_array
+  # output: [1, 2, 3, 4]
 
-# my_array
+  # block with curly braces
+  # because it is on one line does not require a variable to show an array
+  p my_array.map { |value| value * value }
+  # output: [1, 4, 9, 16]
+
+  p my_array
+  # output: [1, 2, 3, 4]
