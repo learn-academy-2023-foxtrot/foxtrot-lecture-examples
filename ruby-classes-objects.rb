@@ -1,7 +1,6 @@
 # Ruby Classes and Objects 9/21/23 Foxtrot
 
-# Learning Objectives
-# can define what action .class method performs
+# Learning Objectives covered during lecture
 # can demonstrate the syntax to write a custom class
 # can define instance variables
 # can define getter methods and setter methods
@@ -23,8 +22,6 @@
 # getter method: allows you to retrive the values
 # setter method: allows you to assign values
 
-# initialize method: 
-# helper methods
 
 # Create a PokemonTrainer class
   # keyword class + ClassName
@@ -165,3 +162,5 @@ p nicole.poke_ball
 nicole.poke_ball = 3
 p nicole
 # #<PokemonTrainer:0x0000000103edd678 @trainer_name="Snackologist", @poke_ball=3>
+
+
