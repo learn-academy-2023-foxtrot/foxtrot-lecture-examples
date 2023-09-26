@@ -8,7 +8,7 @@ require './book.rb'
 describe 'Book' do
   # it block with do/end block
   it 'has to real' do
-    # expect statement will run the new method and expect the creation
+    # expect statement will run the new method and expect the creation of a new instance of Book
     # this expect statement is using curly brackets because the outcome is an action/behavior
     expect{Book.new}.to_not raise_error
   end
@@ -29,22 +29,23 @@ describe 'Book' do
   # Book has an author
   it 'has an author' do
     my_book = Book.new
-    # our book will start with an anonymous author
+    # our book will always start with an anonymous author
     expect(my_book.author).to be_a String
     expect(my_book.author).to eq 'anonymous'
-    # update Book to have a real author
+    # update Book to have a real author name
     my_book = Book.new 'Richard Preston'
+    # expect out Book to now have the authors real name NOT anonymous it was created with
     expect(my_book.author).to eq 'Richard Preston'
   end
 
-  # Book has a current page
+  # Book has a current page (books page is just data)
   it 'has a current page' do
     my_book = Book.new
     expect(my_book.page).to be_a Integer
     expect(my_book.page).to eq 1
   end
 
-  # Book can read the pages
+  # Book can read the pages (changing the page is an action/behavior that is executed)
   it 'can read the pages' do
     my_book = Book.new
     # expect statement is going to change pages as we read our book

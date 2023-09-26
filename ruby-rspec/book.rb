@@ -10,8 +10,10 @@ class Book
     @page = 1
   end
 
-  # method that will change our page number (as if we are reading the book and changing the pages)
+  # method that will change our current page number (as if we are reading the book and changing the pages)
+  # it will take a number of how many pages were read
   def read pages_read
+    # then increment our current page that we initialized our new Books from 1 - the number of pages they read
     @page += pages_read
   end
 
