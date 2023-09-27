@@ -1,5 +1,6 @@
 ## Intro to PostgreSQL  9/27/2023 Foxtrot
 
+- postgreSQL: flavor of sql that is very OOP
 - database query: think of asking a question to abstract data entries
 
 - SELECT statement: used to distinguish which columns you will query from the database table
@@ -120,7 +121,6 @@ ORDER BY population
 LIMIT 25
 ```
 
-aggregate functions
 
 ## Icebox
 - Why does name change color vice the other column names?
