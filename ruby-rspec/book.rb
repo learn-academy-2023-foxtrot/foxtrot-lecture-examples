@@ -18,3 +18,17 @@ class Book
   end
 
 end
+
+class Library < Book
+  attr_accessor :book_collection
+  def initialize 
+    # arrays are great at holding data
+    @book_collection = []
+  end
+
+  def add_books book
+    # book_collection is an empty array that we can shovel data (our books) into
+    @book_collection << book
+  end
+
+end
