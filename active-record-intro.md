@@ -95,7 +95,7 @@ rails console: a shell that allows us to interact with the database
   created_at: Thu, 28 Sep 2023 18:02:07.690017000 UTC +00:00,
   updated_at: Thu, 28 Sep 2023 18:06:28.291805000 UTC +00:00> 
   ```
--  Delete
+- Delete
   - identify which entry you will delete
   > two = PlayList.find 2
   - then perform destroy method
