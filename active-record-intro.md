@@ -1,13 +1,14 @@
 ## Active Record Intro 9/28/23 Foxtrot
 
-can define ORM
-can differentiate between a database and an ORM
-can visualize a database as a collection of rows and columns
-can recall the command to generate a model
-can differentiate between terminal and Rails console
-can equate models with classes
-can recognize that the schema cannot be updated directly
-can use appropriate Active Record syntax to perform CRUD actions on a model
+- can define ORM  
+- can differentiate between a database and an ORM  
+- can visualize a database as a collection of rows and columns  
+- can recall the command to generate a model  
+- can differentiate between terminal and Rails console  
+- can recall basic Active Record data types  
+- can equate models with classes  
+- can recognize that the schema cannot be updated directly  
+- can use appropriate Active Record syntax to perform CRUD actions on a model  
 
 Vocabulary
 ORM: programming technique that allows us to interact with databases using OOP
