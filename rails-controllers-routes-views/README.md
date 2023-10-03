@@ -17,3 +17,22 @@
 - link
   - `<a href="link-here">go here</a>`
   - link_to is a Ruby helper method, takes two arguments - the text for the link, the route
+
+
+# Params
+- https://github.com/sjproctor?tab=repositories
+- pass information through the URL which can dynamically influence out app
+
+- param structure is a hash:
+params = {username: 'Sarah'}
+params[:username]
+
+Params were optional:
+http://localhost:3000/github_user/?username=Sarah
+
+Params are required:
+http://localhost:3000/github_user/Sarah
+
+Route requiring params: get '/github_user/:username' => 'github_account#github_user'
+
+- params will always be a string
