@@ -1,3 +1,11 @@
-h1, h3 {
+h1, h3, main {
   text-align: center;
+  padding: 10px
+}
+.image {
+  padding: 10px
+}
+main {
+  background-color: #272625;
+  color:bisque
 }

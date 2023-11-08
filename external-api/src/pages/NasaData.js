@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Card, CardImg, CardBody, CardText, Button } from  "reactstrap"
+import { NavLink } from 'react-router-dom';
 import nasaPic from "../assets/nasa.png"
 import norris from "../assets/norris.png"
 
@@ -7,6 +8,14 @@ export default function NasaData() {
   return(
     <>
       <h3>Nasa requires an API key</h3>
+      <NavLink to="/">
+        <Button
+          color="dark"
+          outline
+        >
+          Home
+        </Button>
+      </NavLink>
       <br />
       <Card className="my-2">
         <CardBody 

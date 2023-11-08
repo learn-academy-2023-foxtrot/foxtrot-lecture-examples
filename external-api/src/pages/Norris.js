@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Card, CardImg, CardBody, CardText, Button } from  "reactstrap"
+import { NavLink } from 'react-router-dom';
 import chuck from "../assets/chuck.png"
 export default function Norris() {
   // state variables, functions
@@ -8,6 +9,14 @@ export default function Norris() {
   return(
     <>
       <h3>Chuck does not require an API key</h3>
+      <NavLink to="/">
+        <Button
+          color="dark"
+          outline
+        >
+          Home
+        </Button>
+      </NavLink>
       <br />
       <Card className="my-2">
         <CardImg
