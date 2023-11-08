@@ -2,13 +2,22 @@ import React, {useState} from 'react';
 import { Card, CardImg, CardBody, CardText, Button } from  "reactstrap"
 import { NavLink } from 'react-router-dom';
 import chuck from "../assets/chuck.png"
-export default function Norris() {
+
+const Norris = () => {
   // state variables, functions
   const [chuckFacts, setChuckFacts] = useState(null)
+
+  const displayFacts = () => {
+    fetch("https://api.chucknorris.io/jokes/random")
+    .then(response => response.json())
+    .then(payload => setChuckFacts(payload))
+    .catch(error => console.log(error))
+  }
   
+  console.log("chuckFacts: ", chuckFacts)
+
   return(
     <>
-      <h3>Chuck does not require an API key</h3>
       <NavLink to="/">
         <Button
           color="dark"
@@ -29,17 +38,20 @@ export default function Norris() {
         <CardBody 
           style={{backgroundColor: "#272625", textAlign:"center"}}
         >
-          <Button color="warning" outline>
+          <Button onClick={displayFacts} color="warning" outline>
             Click to learn about Chuck Awesome
           </Button>
           <br />
           <CardText 
             style={{color: "#f1f0ef", padding: "30px", fontSize:"30px"}}
           >
-            {/* state variable here */}
+            {chuckFacts?.value}
           </CardText>
         </CardBody>
       </Card>
+
     </>
   )
 }
+
+export default Norris
