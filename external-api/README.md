@@ -2,6 +2,7 @@
 ## Resources
 - [Chuck Norris Jokes API](https://api.chucknorris.io/)
 - [NASA API](https://api.nasa.gov/)
+- [API keys](https://github.com/learn-academy-2023-foxtrot/syllabus/blob/main/capstone/api-keys.md)
 
 ## Vocabulary
 - API: Application Programming Interface, allows data to be shared between different applications
@@ -17,3 +18,18 @@
   - pending
 - API key: unique identifier given by the API provider as a form of authentication adn authorization for a developer to access the API data
 
+## Storing API Key
+- .env is in the Root Directory
+- Make sure there is not any white space on the `.env` file
+- The API variable does not use a declaration.
+- API variable must start with `REACT_APP`
+- Add `.env` in the .gitignore
+- Restart the server
+- Access environment variables defined in .env files:
+  - on the applicable React component, use `process.env.REACT_APP_NASA_API_KEY`
+  - store the method in a variable on the applicable component
+  - reference that variable on the fetch request
+
+## Parsing JSON from an API
+- Make a plan of what you want to display
+- Use methods or variables to store the required data

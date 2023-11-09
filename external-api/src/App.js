@@ -1,12 +1,11 @@
 import React from 'react';
-import { Routes, Route, NavLink } from 'react-router-dom';
-import { Button } from 'reactstrap';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Norris from './pages/Norris';
 import NasaData from './pages/NasaData';
 
-export default function App() {
+const App = () => {
   return(
     <Routes>
       <Route path="/" element={<Home />} />
@@ -15,3 +14,5 @@ export default function App() {
     </Routes>
   )
 }
+
+export default App
